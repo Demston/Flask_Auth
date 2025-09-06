@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приветствие</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/index.css') }}"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="styles/index.css"> -->
+</head>
+<body>
+    <form action="{{ url_for('logout') }}" method="post" class="form-contact">
+      <button class="exit-btn"><a href="/logout">Выход</a></button>
+      <div class="greeting">Привет!</div>
+    </form>
+</body>
+</html>
